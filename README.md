@@ -58,6 +58,13 @@
 ## Problema 16
 > Será utilizado o construtor padrão, ex;
 ```java
-public Exemplo{
+public ALuno{
 }
 ```
+## Problema 17
+```java
+public Aluno{
+  public static void main (String[] args){
+    Nota = new Nota();
+    }
+}
