@@ -129,8 +129,147 @@ Utilizando o termo << create >> antes do metodo que leva o mesmo nome da classe.
 modificadores: + , - , # , ~ , respectivamente querem dizer, (public), (private), (protect), (default).
 ```
 ## Problema 29
-```bash
-
-```
+| Cliente|
+|--------------------|
+|-nome: String|
+|-email: String|
+|-telefone: int|
+|--------------------|
+|+getNome(): String|
+|+setNome(nome: String)|
+|+getEmail(): String|
+|+setEmail(email: String)|
+|+getTelefone(): int|
+|+setTelefone(telefone: int)|
 ## Problema 30
+```Java
+public class Cliente{
+    private String nome;
+    private String email;
+    private int telefone;
+ 
+    public String getNome(){
+        return this.nome;
+    }
+    
+    public void setNome(String nome){
+        this.nome = nome; 
+    }
+       
+    public String getEmail(){
+        return this.email;
+    }
+
+    public void setEmail(String email){
+        this.email = email; 
+    }
+       
+    public String getTelefone(){
+        return this.telefone;
+    }
+
+    public void setTelefone(String telefone){
+        this.telefone = telefone; 
+    }
+   }
+   ```
+   ## Problema 31
+   ```Java
+   public class Produto{
+
+       private String nome;
+    
+       public String getNome(){
+           return this.nome;
+       }
+    
+       public void setNome(String nome){
+           this.nome = nome; 
+       }
+   }
+   
+   public class Password{
+
+       private String value;
+    
+       public void Password(String value){
+       }
+    
+       public boolean isEqual(Password p){
+       }
+   }
+   
+   public class Animal{
+       
+       private boolean alive;
+       
+       public boolean isAlive(){
+       }
+       
+       private void die(){
+       }
+   }
+   ```
+   ## Problema 32
+   |Livro|
+   |----------------------------------|
+   |-nome: String|
+   |----------------------------------|
+   |+getNome(): String|
+   |+setNome(nome: String)|
+   
+|ContaCorrente|
+|----------------------------------|
+|-Saldo: double|
+|----------------------------------|
+|+sacar(valor:double)
+|+depositar(valor:double)|
+|-recalcularSaldo()|
+
+|Par|
+|----------------------------------|
+|+chave: String|
+|+valor: String|
+
+|Impressora|
+|----------------------------------|
+|+imprimir(documento:Documento)|
+
+## Problema 33
 ```bash
+O estado de um objeto é os valores que seus atributos possuem no momento, os atributos de instância (ou de objeto) definem o estado desse objeto.
+```
+
+## Problema 34
+```Java
+public class Dog(){
+    int = 0
+    String = null
+    boolean = false
+```
+
+## Problema 35
+```Java
+public class Dog(){
+    Years int = 10
+    name String = "Spike"
+    alive boolean = true
+```
+## Problema 36
+```Java
+public class pug(){
+    idade int = 2
+    nome String ="Spoke"
+    vivo boolean = true
+    
+public class buldog(){
+    idade int = 0
+    nome String ="Spike"
+    vivo boolean = false
+```
+## Problema 37
+```bash
+Os erros que identifiquei no código são: atributo weight está como public, o que acaba inutilisando os métodos getWeight e setWeight, o que permite o acesso direto ao atributo.
+No método main, após instânciar o objeto, o atributo name é acessado de forma direta, o que não é possivel, pois seu modificador é privado.
+As possíveis correções que identifiquei: Poderiamos colocar todos os atributos como privados e utilizar os setters para modificar o estado dos atributos do objeto.
+```
